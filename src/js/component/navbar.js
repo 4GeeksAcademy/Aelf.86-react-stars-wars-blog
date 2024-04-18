@@ -6,7 +6,7 @@ export const Navbar = () => {
 	const { store, actions } = useContext(Context)
 	console.log(store.favorites)
 	return (
-		<nav className="navbar navbar-light bg-light mb-3 ">
+		<nav className="container navbar mb-3 d-flex"  >
 
 			<Link to="/">
 				<img
@@ -18,7 +18,7 @@ export const Navbar = () => {
 			<div className="ml-auto">
 
 				<div className="dropdown">
-					<button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<button className="btn btn-secondary dropdown-toggle justify-content-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Favorites {store.favorites.length}
 
 					</button>
